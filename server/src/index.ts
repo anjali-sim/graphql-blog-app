@@ -96,7 +96,11 @@ async function bootstrap() {
     //   credentials: true,
     // }),
     cors<cors.CorsRequest>({
-      origin: ["http://localhost:5173", process.env.CLIENT_ORIGIN as string],
+      origin: [
+        "http://localhost:5173",
+        "https://graphql-blog-app-six.vercel.app/",
+        process.env.CLIENT_ORIGIN as string,
+      ],
       credentials: true,
     }),
     express.json(),
