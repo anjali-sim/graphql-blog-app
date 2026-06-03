@@ -117,30 +117,6 @@ The app will be available at `http://localhost:5173`.
 
 ---
 
-## GraphQL Concepts Demonstrated
-
-| Concept                         | Where                                                     |
-| ------------------------------- | --------------------------------------------------------- |
-| SDL schema design               | `server/src/schema/typeDefs.ts`                           |
-| Queries & Mutations             | `server/src/resolvers/query.ts`, `mutation.ts`            |
-| Subscriptions (PubSub)          | `server/src/resolvers/subscription.ts`, `utils/pubsub.ts` |
-| Custom schema directives        | `server/src/directives/authDirective.ts`                  |
-| DataLoader (N+1 fix)            | `server/src/dataloaders/index.ts`                         |
-| Enums, Interfaces, Unions       | `server/src/schema/typeDefs.ts`                           |
-| Input types                     | `server/src/schema/typeDefs.ts`                           |
-| Cursor-based pagination         | `server/src/resolvers/query.ts`                           |
-| Apollo Link chain               | `client/src/apollo/client.ts`                             |
-| Auth link (JWT headers)         | `client/src/apollo/client.ts`                             |
-| Error link + retry link         | `client/src/apollo/client.ts`                             |
-| Split link (HTTP vs WS)         | `client/src/apollo/client.ts`                             |
-| InMemoryCache field policies    | `client/src/apollo/client.ts`                             |
-| Optimistic UI                   | `client/src/components/PostCard.tsx`                      |
-| Fragments                       | `client/src/graphql/fragments/index.ts`                   |
-| Real-time subscriptions         | `client/src/components/CommentSection.tsx`                |
-| `@skip` / `@include` directives | Used in client queries                                    |
-
----
-
 ## Available Scripts
 
 ### Server
