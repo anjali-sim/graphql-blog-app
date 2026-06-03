@@ -47,13 +47,13 @@ const HomePage: React.FC = () => {
       <section className="relative overflow-hidden rounded-3xl border border-slate-200/70 bg-linear-to-br from-indigo-600 via-purple-600 to-fuchsia-600 px-6 py-14 text-center text-white shadow-lg sm:px-12 sm:py-20">
         <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.25),transparent_50%)]" />
         <div className="relative z-10 mx-auto max-w-2xl">
-          <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-medium uppercase tracking-wider text-white/90 ring-1 ring-inset ring-white/20">
+          {/* <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-medium uppercase tracking-wider text-white/90 ring-1 ring-inset ring-white/20">
             ✨ GraphQL Practical Demo
-          </span>
-          <h1 className="mt-4 text-4xl font-extrabold tracking-tight sm:text-5xl">
+          </span> */}
+          <h1 className="mt-4 text-4xl font-extrabold tracking-tight sm:text-5xl text-purple-600">
             Blog & CMS
           </h1>
-          <p className="mt-4 text-base text-white/85 sm:text-lg">
+          <p className="mt-4 text-base  sm:text-lg text-purple-600">
             A full GraphQL practical — Apollo Client, Subscriptions, Caching,
             Auth, RBAC & more.
           </p>

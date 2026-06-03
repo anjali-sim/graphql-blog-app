@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
           <span className="grid h-8 w-8 place-items-center rounded-lg bg-linear-to-br from-indigo-600 to-purple-600 text-white shadow-sm">
             📝
           </span>
-          <span className="bg-linear-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-indigo-600 to-purple-600 bg-clip-text text-purple-600">
             BlogCMS
           </span>
         </Link>
