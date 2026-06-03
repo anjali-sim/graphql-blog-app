@@ -98,7 +98,7 @@ async function bootstrap() {
     cors<cors.CorsRequest>({
       origin: [
         "http://localhost:5173",
-        "https://graphql-blog-app-six.vercel.app/",
+        "https://graphql-blog-app-six.vercel.app",
         process.env.CLIENT_ORIGIN as string,
       ],
       credentials: true,
