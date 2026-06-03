@@ -91,8 +91,12 @@ async function bootstrap() {
   // ── 6. Apply middleware ───────────────────────────────────────────────────
   app.use(
     "/graphql",
+    // cors<cors.CorsRequest>({
+    //   origin: process.env.CLIENT_ORIGIN || "http://localhost:5173",
+    //   credentials: true,
+    // }),
     cors<cors.CorsRequest>({
-      origin: process.env.CLIENT_ORIGIN || "http://localhost:5173",
+      origin: ["http://localhost:5173", process.env.CLIENT_ORIGIN as string],
       credentials: true,
     }),
     express.json(),
